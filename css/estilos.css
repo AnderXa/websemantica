@@ -1,0 +1,402 @@
+/* Atributos generales en toda la página */
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    background-color: #c9bfb1;
+}
+header {
+    background-image: url('../img/fondoCabecera.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #594c2a;
+    color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 10%;
+    width: 100%;    
+}
+nav {
+    background-color: #161618;
+    color: rgb(220,220,220);
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    height: 70px;
+    font-size: 1.25em;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+}
+nav li {
+    margin: 0;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+nav li:hover {
+    background-color: #ad9978;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: inherit;
+}
+aside {
+    background-color: #c9bfb1;
+}
+footer {
+    background-color: #161618;
+    color: rgb(220,220,220);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+p {
+    font-size: 1.15em;
+}
+article {
+    background-color: #ad9978;
+    color: rgb(0,0,0);
+    display: flex;
+    flex-flow: row wrap;
+}
+#seccion-main-aside {
+    display:flex;
+    flex-flow: row-reverse;
+}
+
+/* Atributos que se usan en el index */
+.contenedor-icono {
+    margin: 30px 30px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-icono img {
+    max-height: 100px;
+}
+.articulo-index {
+    margin: 75px 50px;
+    padding-left: 50px;
+    position: relative;
+    border-radius: 20px;
+}
+.articulo-index h2 {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+.articulo-index h3 {
+    flex-basis: 75%;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.articulo-index p {
+    flex-basis: 80%;
+}
+.articulo-index img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 90%;
+    max-width: 15%;
+    margin-bottom: 50px;
+}
+.boton-index {
+    background-color: rgb(220,220,220);
+    bottom: 0;
+    right: 15px;
+    margin: 10px;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+.boton-index:hover {
+    background-color: #b9b2a5;
+}
+#iconos {
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px dotted #333;
+}
+#iconos h3 {
+    font-size: 1.4em;
+    padding-bottom: 25px;
+}
+#main-index {
+    display: flex;
+    flex-basis: 85%;
+}
+
+
+
+
+/* Atributos que se usan en noticias.html */
+.articulo-noticias {
+    margin: 15px 150px 50px;
+    padding-left: 50px;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 20px;
+}
+.articulo-noticias p {
+    padding-right: 10%;
+}
+.articulo-noticias h3 {
+    font-size: 1.5em;
+}
+.leer-mas {
+    position: absolute;
+    background-color: rgb(220,220,220);
+    bottom: 0;
+    right: 15px;
+    margin: 10px;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+.leer-mas:hover {
+    background-color: #b9b2a5;
+}
+.centrado {
+    text-align: center;
+    font-size: 2em;
+}
+.imagen-noticias {
+    display: flex; 
+    flex-basis: 20%;
+    margin: 5% 5% 5% 0;
+    justify-content: center;
+}
+.imagen-noticias img {
+    max-width: 100%;
+}
+.descripcion-de-noticia {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+/* Atributos que se usan en estilos.html */
+#top-lecturas {
+    display: flex;
+    flex-basis: 15%;
+    flex-direction: column;
+    background-color: #594c2adb;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+.articulo-top-lecturas {
+    text-align: center;
+    margin-bottom: 20px;;
+    padding: 20px;
+}
+.articulo-top-lecturas p{
+    text-align: left;
+    margin: 0;
+}
+.articulo-top-lecturas img {
+    width: 70%;
+    text-align: center;
+}
+.articulos-estilos-literarios {
+    margin: 5%;
+    width: 40%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.articulos-estilos-literarios img {
+    position: absolute;
+    top: 8%;
+    max-width: 50%;
+    max-height: 50%;
+}
+.articulos-estilos-literarios h2 {
+    text-align: center;
+    position: absolute;
+    bottom: 27%;
+}
+.articulos-estilos-literarios p {
+    position: absolute;
+    bottom: 14%;
+    text-align: center;
+}
+.articulos-estilos-literarios a {
+    position: absolute;
+    background-color: rgb(220,220,220);
+    bottom: 3%;
+    margin: 10px;
+    padding: 15px 125px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+
+}
+
+/* Atributos que se usan en contacto.html */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #ad9978;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.elementos-formulario {
+    display:flex;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.elementos-formulario strong {
+    font-size: 1.25em;
+}
+.elementos-formulario input {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.elementos-formulario select {
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.elementos-formulario textarea {
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* Atributos que se usan en estilos literarios */
+#main-estilos-literarios{
+    display: flex;
+    flex-basis: 85%;
+    flex-direction: column;
+}
+.articulo-estilo-literario {
+    margin: 15px 150px 50px;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.articulo-estilo-literario p {
+    padding-right: 10%;
+}
+.articulo-estilo-literario h3 {
+    font-size: 1.5em;
+}
+.foto-libro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foto-libro img {
+    width: 90%;
+    max-height: auto;
+    margin: 15px;
+}
+.descripcion-libro {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+#contenedor-estilos-literarios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 85%;
+}
+
+/* Atributos que se usan en descripción de cada libro */
+#contenedor-libro {
+    display: flex;
+    flex-direction: row;
+}
+.articulo-libro {
+    display: flex; 
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items: center;
+    margin: 2% 2% 1% 5%;
+    padding: 1% 2%;
+    border-radius: 5%;
+}
+.articulo-libro h3 {
+    width: 100%;
+    text-align: center;
+}
+.articulo-libro img {
+    width: 50%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.articulo-libro p {
+    width: 100%;
+    text-align: left;
+}
+.articulo-sinopsis-libro {
+    display: flex; 
+    flex-direction: column;
+    padding: 2.5%;
+    flex-basis: 70%;
+    align-items: center;
+    justify-content:flex-start;
+    margin: 2% 5% 1% 2%;
+    border-radius: 5%;
+}
+.articulo-sinopsis-libro h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+.articulo-sinopsis-libro img {
+    width: 30%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.articulo-sinopsis-libro p {
+    font-size: 1.25em;
+}
+
+
+
+

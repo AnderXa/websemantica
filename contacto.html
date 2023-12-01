@@ -1,0 +1,80 @@
+<!------------------------------------------------------------------------------
+    CONTACTO: Página de contacto.
+------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Contactar con el propietario de la web">
+        <meta name="keywords" content="Contacto, escribir">
+
+        <!-- Título de la página -->
+        <title>Contacto - Lectulandia</title>
+
+        <!-- Usaremos la fuente de Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link hrel="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+        <!-- Fichero de estilos para esta página -->
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <body>
+        <!-- Cabeera -->
+        <header>
+            <h1>Lectulandia</h1>
+            <h2>Contacta conmigo</h2>
+        </header>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <!-- Links a las diferentes páginas de la web -->
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./noticias.html">Noticias</a></li>
+                <li><a href="./estilos.html">Estilos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+        </nav>
+
+        <main>
+            <form action="contacto.html" id="formulario">
+                <!-- Nombre -->
+                <article class="elementos-formulario">
+                    <strong>Nombre: </strong>
+                    <input type="text" name="nombre" value="Nombre">
+                </article>
+                <!-- Apellidos -->
+                <article class="elementos-formulario">
+                    <strong>Apellidos: </strong>
+                    <input type="text" name="apellidos" value="Apellidos">
+                </article>
+                <!-- Email -->
+                <article class="elementos-formulario">
+                    <strong>Mail: </strong>
+                    <input type="text" name="email" value="Mail">
+                </article>
+                <!-- Estilo literario -->
+                <article class="elementos-formulario">
+                    <strong>Estilo literario </strong>
+                    <select name="estilos-literarios">
+                        <option value="biografias">Biografías</option>;
+                        <option value="ciencia-ficcion">Ciencia Ficción</option>
+                        <option value="novela-historica">Novela Histórica</option>
+                        <option value="drama">Drama</option>
+                    </select>
+                </article>
+                <!-- Mensaje -->
+                <article class="elementos-formulario">
+                    <strong>Introduce tu mensaje</strong>
+                    <textarea name="mensaje" rows="10" cols="30">Escribe tu mensaje...</textarea>>
+                </article>
+                <!-- Enviar -->
+                <article class="elementos-formulario">
+                    <input type="submit" value="Enviar" class="enviar">
+                </article>
+            </form>
+        </main>
+    </body>
+</html>

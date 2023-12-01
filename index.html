@@ -1,0 +1,120 @@
+<!------------------------------------------------------------------------------
+    ALUMNO: Ander Chaparro Ibarguren
+    FECHA: 25-11-2023
+    MÓDULO: LMSGI
+    UD: 02
+    TAREA EVALUATIVA 02
+    AUTOEVALUACIÓN: 
+    Desarrollar el sitio web diseñado en la primera tarea de evaluación.
+    INICIO: Página principal de la web.
+------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Blog sobre literatura">
+        <meta name="keywords" content="Libros, literatura, lecturas">
+
+        <!-- Título de la página -->
+        <title>Lectulandia - Tu web sobre literatura</title>
+
+        <!-- Usaremos la fuente de google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+        <!-- Fichero de estilos para esta página -->
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <!-- Cabecera de la web -->
+        <header>
+            <h1>Lectulandia</h1>
+            <h2>Tu web sobre literatura</h2>
+        </header>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <!-- Links a las diferentes páginas de la web -->
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./noticias.html">Noticias</a></li>
+                <li><a href="./estilos.html">Estilos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección que agrupa el main y el aside -->
+        <section id="seccion-main-aside">
+            <!-- Columna derecha de la página, enlaces a estilos literarios -->
+            <aside id="iconos">
+                <!-- Ciencia Ficción -->
+                <h3>ESTILOS MÁS POPULARES</h3>
+                <article class="contenedor-icono">
+                    <a href="./estilosliterarios/cienciaficcion.html">
+                        <img src="./img/cienciaficcion.jpg" alt="Ciencia Ficción">
+                    </a>
+                </article>
+                <!-- Novela histórica -->
+                <article class="contenedor-icono">
+                    <a href="./estilosliterarios/novelahistorica.html">
+                        <img src="./img/novelahistorica.jpg" alt="Novela histórica">
+                    </a>
+                </article>
+                <!-- Biografias -->
+                <article class="contenedor-icono">
+                    <a href="./estilosliterarios/biografias.html">
+                        <img src="./img/biografias.jpg" alt="Biografías">
+                    </a>
+                </article>
+            </aside>
+
+            <!-- Contenido principal de la página -->
+            <main id="main-index">
+                <section>
+                    <!-- Bloque presentación -->
+                    <article class="articulo-index">
+                        <h2>Presentación</h2>
+                        <p>
+                            Bienvenidos a mi página web sobre literatura. Aquí podremos
+                            compartir nuestras opiniones acerca de libros que hayamos
+                            leído o que nos hayan recomendado. También publicaré 
+                            información interesante a los apasionados en la lectura
+                            como puede ser: libro recomendado de la semana, novedades
+                            sobre literatura, historia de la literatura en general, 
+                            grandes artistas, pequeñas biografías, curiosidades
+                            históricas... No olvidéis que os podéis poner en contacto                                conmigo a través de la página "Contacto".
+                        </p>
+                        <img src="./img/presentacion.jpg" alt="presentación">
+                        <p>
+                            <a href="./contacto.html" class="boton-index">
+                                Contacta conmigo
+                            </a>
+                        </p>
+                    </article>
+                    <!-- Bloque libro de la semana -->
+                    <article class="articulo-index">
+                        <h2>Libro de la semana</h2>
+                        <h3>Africanus, el hijo del consul - Santiago Posteguillo</h3>
+                        <p> 
+                            "Africanus: El Hijo del Cónsul" de Santiago Posteguillo es un viaje apasionante a la antigua Roma, donde seguimos la vida de Publio Cornelio Escipión, conocido como Africanus. Enmarcada en la Segunda Guerra Púnica, la historia despliega la brillantez militar y las complejidades personales de Africanus. Desde su infancia hasta su ascenso en las filas romanas, el relato captura la esencia de la época a través de intrigas políticas, batallas épicas y dilemas éticos. Posteguillo teje con maestría hechos históricos y emociones humanas, ofreciendo una narrativa vibrante y absorbente. La obra no solo invita a explorar los meandros de la historia romana, sino que también resalta la universalidad de temas como la lealtad y la ambición. "Africanus" es una obra magistral que sumerge a los lectores en un mundo de grandeza, sacrificio y heroísmo.
+                        </p>
+                        <img src="./img/africanus.jpeg" alt="Africanus, el hijo del cónsul">
+                        <p>
+                            <a href="./estilosliterarios/novela-historica/africanus-el-hijo-del-consul.html"
+                            class="boton-index">
+                                Más información...
+                            </a>
+                        </p>
+                    </article>
+                </section>
+            </main>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>Lectulandia, tu web de literatura.</p>
+        </footer>
+    </body>
+</html>
